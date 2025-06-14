@@ -17,7 +17,7 @@ export default function SocialProofSection() {
               <h3 className="text-xl font-semibold mb-2">Sarah Johnson</h3>
               <p className="text-gray-400">Marketing Director, TechCorp</p>
               <p className="mt-4 text-gray-300">
-                "Deepreech has revolutionized how we find and work with creators. The AI matching is incredibly accurate."
+                &ldquo;Deepreech has revolutionized how we find and work with creators. The AI matching is incredibly accurate.&rdquo;
               </p>
             </div>
           </div>
@@ -27,7 +27,7 @@ export default function SocialProofSection() {
               <h3 className="text-xl font-semibold mb-2">Michael Chen</h3>
               <p className="text-gray-400">Founder, GrowthLabs</p>
               <p className="mt-4 text-gray-300">
-                "The platform's analytics have helped us make data-driven decisions about our creator partnerships."
+                &ldquo;The platform&apos;s analytics have helped us make data-driven decisions about our creator partnerships.&rdquo;
               </p>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function SocialProofSection() {
               <h3 className="text-xl font-semibold mb-2">Emily Rodriguez</h3>
               <p className="text-gray-400">Brand Manager, LifestyleCo</p>
               <p className="mt-4 text-gray-300">
-                "We've seen a 3x increase in engagement since using Deepreech to find our creator matches."
+                &ldquo;We&apos;ve seen a 3x increase in engagement since using Deepreech to find our creator matches.&rdquo;
               </p>
             </div>
           </div>
