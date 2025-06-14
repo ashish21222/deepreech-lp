@@ -12,15 +12,35 @@ export default function SocialProofSection() {
         </h2>
         
         <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-          <blockquote className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-2xl max-w-sm transform hover:scale-105 transition-transform duration-300">
-            <p className="text-white text-lg italic mb-4">"deepreech made our creator campaigns effortless and effective."</p>
-            <span className="text-purple-300 font-semibold">— Pilot User</span>
-          </blockquote>
-          
-          <blockquote className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-2xl max-w-sm transform hover:scale-105 transition-transform duration-300">
-            <p className="text-white text-lg italic mb-4">"We saw a 3x increase in ROI after switching to deepreech."</p>
-            <span className="text-purple-300 font-semibold">— Early Brand</span>
-          </blockquote>
+          <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-2">Sarah Johnson</h3>
+              <p className="text-gray-400">Marketing Director, TechCorp</p>
+              <p className="mt-4 text-gray-300">
+                "Deepreech has revolutionized how we find and work with creators. The AI matching is incredibly accurate."
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-2">Michael Chen</h3>
+              <p className="text-gray-400">Founder, GrowthLabs</p>
+              <p className="mt-4 text-gray-300">
+                "The platform's analytics have helped us make data-driven decisions about our creator partnerships."
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold mb-2">Emily Rodriguez</h3>
+              <p className="text-gray-400">Brand Manager, LifestyleCo</p>
+              <p className="mt-4 text-gray-300">
+                "We've seen a 3x increase in engagement since using Deepreech to find our creator matches."
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

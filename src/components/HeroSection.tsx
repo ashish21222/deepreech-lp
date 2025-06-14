@@ -7,20 +7,22 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm"></div>
       
       <div className="relative max-w-7xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
-          <Star className="w-4 h-4 text-yellow-400 fill-current" />
-          <span className="text-white/90 text-sm font-medium">AI-Powered Creator Journey Planning</span>
+        <div className="flex justify-center mb-8">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2">
+            <Star className="w-4 h-4 text-yellow-400 fill-current" />
+            <span className="text-white/90 text-sm font-medium">AI-Powered Creator Journey Planning</span>
+          </div>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-          Transform Your{" "}
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto">
+          Transform Your Creator Strategy with{' '}
           <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-            Creator Strategy
+            AI-Powered Matching
           </span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-white/80 mb-4 max-w-3xl mx-auto">
-          Find, analyze, and connect with the best creators
+        <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          Connect with the perfect creators for your brand. Our AI platform analyzes millions of data points to find your ideal matches.
         </p>
 
         <p className="text-lg text-white/60 mb-12 max-w-2xl mx-auto">
