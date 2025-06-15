@@ -31,7 +31,7 @@ export default function ContactSection() {
 
       setStatus({ loading: false, success: true, error: '' });
       form.reset();
-    } catch (_error) {
+    } catch {
       setStatus({ loading: false, success: false, error: 'Failed to send message. Please try again.' });
     }
   };
