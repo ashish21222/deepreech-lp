@@ -115,13 +115,10 @@ export default function ContactSection() {
               <h3 className="text-xl font-semibold text-white mb-4 text-right">Contact Information</h3>
               <div className="space-y-4 text-right">
                 <p className="text-white/60">
-                  <span className="text-white">Email:</span> contact@deepreech.com
+                  <span className="text-white">Email:</span> support@deepreech.com
                 </p>
                 <p className="text-white/60">
-                  <span className="text-white">Phone:</span> +1 (234) 567-890
-                </p>
-                <p className="text-white/60">
-                  <span className="text-white">Address:</span> 123 Creator Street, Digital City, 12345
+                  <span className="text-white">Address:</span> Greater Noida, 201310
                 </p>
               </div>
             </div>

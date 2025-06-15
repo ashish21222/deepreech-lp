@@ -59,11 +59,6 @@ export default function Footer() {
                   support@deepreech.com
                 </a>
               </li>
-              <li className="text-gray-400">
-                <a href="tel:+1234567890" className="hover:text-white transition-colors">
-                  +1 (234) 567-890
-                </a>
-              </li>
             </ul>
           </div>
 
