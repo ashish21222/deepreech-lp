@@ -1,4 +1,41 @@
+'use client';
+
+import { useState } from 'react';
+
 export default function ContactSection() {
+  const [status, setStatus] = useState({
+    loading: false,
+    success: false,
+    error: ''
+  });
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus({ loading: true, success: false, error: '' });
+
+    try {
+      const form = e.currentTarget;
+      const formData = new FormData(form);
+      
+      const response = await fetch('https://formspree.io/f/mwpbbbga', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      setStatus({ loading: false, success: true, error: '' });
+      form.reset();
+    } catch (error) {
+      setStatus({ loading: false, success: false, error: 'Failed to send message. Please try again.' });
+    }
+  };
+
   return (
     <section id="contact" className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
@@ -16,7 +53,7 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {/* Contact Form */}
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-2">
                   Name
@@ -24,6 +61,8 @@ export default function ContactSection() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  required
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   placeholder="Your name"
                 />
@@ -35,6 +74,8 @@ export default function ContactSection() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  required
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   placeholder="your@email.com"
                 />
@@ -45,16 +86,25 @@ export default function ContactSection() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
+                  required
                   rows={4}
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500"
                   placeholder="Your message"
                 ></textarea>
               </div>
+              {status.error && (
+                <p className="text-red-400 text-sm">{status.error}</p>
+              )}
+              {status.success && (
+                <p className="text-green-400 text-sm">Message sent successfully!</p>
+              )}
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+                disabled={status.loading}
+                className="w-full bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {status.loading ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
