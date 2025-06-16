@@ -26,9 +26,9 @@ const FlowDiagram = () => {
           <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
             <UserIcon className="w-5 h-5 text-white" />
           </div>
-          <div className="text-center">
-            <h3 className="font-medium text-sm text-white">John Smith</h3>
-            <p className="text-white/60 text-xs">Brand Manager at TechCorp</p>
+          <div className="">
+            <h3 className="font-medium text-sm text-white">Ashish</h3>
+            <p className="text-white/60 text-xs">Brand Manager at Sony</p>
           </div>
         </div>
       </div>
@@ -43,10 +43,10 @@ const FlowDiagram = () => {
       </div>
     ),
     2: (
-      <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 space-y-3 flex flex-col items-center">
+      <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 space-y-3 flex flex-col">
         {[
-          { name: 'Sarah Tech', followers: '850K', rating: 5 },
-          { name: 'Mike Digital', followers: '650K', rating: 4 },
+          { name: 'Hareesh Kumar - Tech Vlogger', followers: '22K', rating: 3 },
+          { name: 'AniThing', followers: '193K', rating: 5 },
         ].map((creator, i) => (
           <div key={i} className="flex items-center gap-3">
             <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
@@ -82,10 +82,10 @@ const FlowDiagram = () => {
       </div>
     ),
     4: (
-      <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 space-y-3 flex flex-col items-center">
+      <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 space-y-3 flex flex-col">
         {[
           { title: 'Tech Review', views: '1.2M' },
-          { title: 'Setup Tour', views: '890K' },
+          { title: 'Cinematic Storytelling', views: '890K' },
         ].map((video, i) => (
           <div key={i} className="flex items-center gap-3">
             <div className="w-8 h-8 bg-white/10 rounded flex items-center justify-center">
@@ -105,15 +105,15 @@ const FlowDiagram = () => {
       <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center">
         <div className="border-l-2 border-white/20 pl-3 text-center">
           <p className="text-white/80 text-sm mb-2">Hi [Creator],</p>
-          <p className="text-white/60 text-xs">Loved your video in which you did a Sony camera review! Would you be interested in creating an authentic review?</p>
+          <p className="text-white/60 text-xs">Loved your video in which you did a Sony camera review! Would you be interested in creating an authentic review about a new camera.</p>
         </div>
       </div>
     ),
     6: (
       <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 space-y-3 flex flex-col items-center">
         {[
-          { title: 'Day in the Life', score: '98%' },
-          { title: 'Features Deep Dive', score: '95%' },
+          { title: 'Day in the Life {hook, body, CTA}', score: '98%' },
+          { title: 'Features Deep Dive {hook, body, CTA}', score: '95%' },
         ].map((idea, i) => (
           <div key={i} className="flex justify-between items-center w-full gap-4">
             <span className="text-white text-sm">{idea.title}</span>
@@ -205,11 +205,11 @@ const FlowDiagram = () => {
   }
 
   return (
-    <div className="max-w-5xl w-full mx-auto px-4 py-12 bg-gradient-to-b from-gray-900 to-purple-900/30 rounded-3xl my-12">
-      <h1 className="text-2xl font-bold text-center mb-8 text-white">
+    <div className="w-full mx-auto px-2 sm:px-4 py-8 sm:py-12 bg-gradient-to-b from-gray-900 to-purple-900/30 rounded-3xl my-8 sm:my-12 overflow-x-auto">
+      <h1 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-white">
         Campaign Creation Flow
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-2 sm:gap-8 min-w-[600px]">
         {/* Flow steps column */}
         <div className="flex flex-col items-center space-y-1">
           {steps.map((step, index) => {
