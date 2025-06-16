@@ -219,7 +219,7 @@ const FlowDiagram = () => {
             return (
               <Fragment key={index}>
                 <div
-                  className={`transition-all duration-500 h-[80px] sm:h-[120px] flex items-center justify-center w-full ${
+                  className={`transition-all duration-500 h-[100px] sm:h-[120px] flex items-center justify-center w-full ${
                     isVisible
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-4 pointer-events-none'
@@ -267,7 +267,7 @@ const FlowDiagram = () => {
             return (
               <Fragment key={index}>
                 <div
-                  className={`transition-all duration-500 w-full h-[80px] sm:h-[120px] flex items-center justify-center ${
+                  className={`transition-all duration-500 w-full h-[100px] sm:h-[120px] flex items-center ${
                     isVisible
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-4 pointer-events-none'
@@ -277,7 +277,7 @@ const FlowDiagram = () => {
                       : ''
                   }`}
                 >
-                  <div className={`bg-gradient-to-r ${step.color} rounded-lg p-2 sm:p-4 w-full h-full flex items-center justify-center ${
+                  <div className={`bg-gradient-to-r ${step.color} rounded-lg p-2 sm:p-4 w-full h-full flex items-center ${
                     isSelected ? 'ring-2 ring-purple-400' : ''
                   }`}>
                     {stepExamples[index as keyof typeof stepExamples]}
