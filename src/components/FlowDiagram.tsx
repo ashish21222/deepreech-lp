@@ -21,7 +21,7 @@ const FlowDiagram = () => {
 
   const stepExamples = {
     0: (
-      <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center">
+      <div className="bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg p-2 sm:p-4 flex flex-col items-center">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
             <UserIcon className="w-5 h-5 text-white" />
@@ -34,7 +34,7 @@ const FlowDiagram = () => {
       </div>
     ),
     1: (
-      <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center">
+      <div className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg p-2 sm:p-4 flex flex-col items-center">
         <p className="text-white text-sm mb-2 text-center">&ldquo;Increase brand awareness among tech-savvy millennials&rdquo;</p>
         <div className="flex gap-2 justify-center">
           <span className="px-2 py-1 bg-white/20 text-white rounded-full text-xs">Tech</span>
@@ -43,7 +43,7 @@ const FlowDiagram = () => {
       </div>
     ),
     2: (
-      <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 space-y-3 flex flex-col">
+      <div className="bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg p-2 sm:p-4 space-y-3 flex flex-col">
         {[
           { name: 'Hareesh Kumar - Tech Vlogger', followers: '22K', rating: 3 },
           { name: 'AniThing', followers: '193K', rating: 5 },
@@ -68,7 +68,7 @@ const FlowDiagram = () => {
       </div>
     ),
     3: (
-      <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center">
+      <div className="bg-gradient-to-r from-teal-500 to-emerald-500 rounded-lg p-2 sm:p-4 flex flex-col items-center">
         <div className="grid grid-cols-2 gap-3">
           <div className="text-center p-2 bg-white/20 rounded-lg">
             <div className="text-lg font-bold text-white">98%</div>
@@ -82,7 +82,7 @@ const FlowDiagram = () => {
       </div>
     ),
     4: (
-      <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 space-y-3 flex flex-col">
+      <div className="bg-gradient-to-r from-emerald-500 to-green-500 rounded-lg p-2 sm:p-4 space-y-3 flex flex-col">
         {[
           { title: 'Tech Review', views: '1.2M' },
           { title: 'Cinematic Storytelling', views: '890K' },
@@ -102,7 +102,7 @@ const FlowDiagram = () => {
       </div>
     ),
     5: (
-      <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center">
+      <div className="bg-gradient-to-r from-lime-500 to-yellow-500 rounded-lg p-2 sm:p-4 flex flex-col items-center">
         <div className="border-l-2 border-white/30 pl-3 text-center">
           <p className="text-white text-sm mb-2">Hi [Creator],</p>
           <p className="text-white/80 text-xs">Loved your video in which you did a Sony camera review! Would you be interested in creating an authentic review about a new camera.</p>
@@ -110,7 +110,7 @@ const FlowDiagram = () => {
       </div>
     ),
     6: (
-      <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 space-y-3 flex flex-col items-center">
+      <div className="bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg p-2 sm:p-4 space-y-3 flex flex-col items-center">
         {[
           { title: 'Day in the Life {hook, body, CTA}', score: '98%' },
           { title: 'Features Deep Dive {hook, body, CTA}', score: '95%' },
@@ -123,7 +123,7 @@ const FlowDiagram = () => {
       </div>
     ),
     7: (
-      <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center">
+      <div className="bg-gradient-to-r from-red-500 to-pink-500 rounded-lg p-2 sm:p-4 flex flex-col items-center">
         <div className="grid grid-cols-2 gap-3">
           <div className="text-center p-2 bg-white/20 rounded-lg">
             <div className="text-lg font-bold text-white">2.1M</div>
