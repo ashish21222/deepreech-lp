@@ -211,7 +211,7 @@ const FlowDiagram = () => {
       </h1>
       <div className="grid grid-cols-2 gap-2 sm:gap-8 min-w-[320px] sm:min-w-[600px]">
         {/* Flow steps column */}
-        <div className="flex flex-col items-center space-y-2">
+        <div className="flex flex-col items-center space-y-3 sm:space-y-1">
           {steps.map((step, index) => {
             const isVisible = visibleSteps.includes(index)
             const isAnimating = animatingStep === index
@@ -247,7 +247,7 @@ const FlowDiagram = () => {
                         : 'opacity-0'
                     }`}
                   >
-                    <div className={`h-6 sm:h-8 border-l-2 border-dashed border-purple-400 ${
+                    <div className={`h-6 sm:h-4 border-l-2 border-dashed border-purple-400 ${
                       isAnimating ? 'animate-path-glow' : ''
                     }`}></div>
                   </div>
@@ -258,7 +258,7 @@ const FlowDiagram = () => {
         </div>
 
         {/* Example column */}
-        <div className="flex flex-col items-center space-y-2">
+        <div className="flex flex-col items-center space-y-3 sm:space-y-1">
           {steps.map((step, index) => {
             const isVisible = visibleSteps.includes(index)
             const isAnimating = animatingStep === index
@@ -291,7 +291,7 @@ const FlowDiagram = () => {
                         : 'opacity-0'
                     }`}
                   >
-                    <div className={`h-6 sm:h-8 border-l-2 border-dashed border-purple-400 ${
+                    <div className={`h-6 sm:h-4 border-l-2 border-dashed border-purple-400 ${
                       isAnimating ? 'animate-path-glow' : ''
                     }`}></div>
                   </div>
