@@ -211,7 +211,7 @@ const FlowDiagram = () => {
       </h1>
       <div className="grid grid-cols-2 gap-2 sm:gap-8 min-w-[320px] sm:min-w-[600px]">
         {/* Flow steps column */}
-        <div className="flex flex-col items-center space-y-1">
+        <div className="flex flex-col items-center space-y-2">
           {steps.map((step, index) => {
             const isVisible = visibleSteps.includes(index)
             const isAnimating = animatingStep === index
@@ -247,7 +247,7 @@ const FlowDiagram = () => {
                         : 'opacity-0'
                     }`}
                   >
-                    <div className={`h-4 sm:h-6 border-l-2 border-dashed border-purple-400 ${
+                    <div className={`h-6 sm:h-8 border-l-2 border-dashed border-purple-400 ${
                       isAnimating ? 'animate-path-glow' : ''
                     }`}></div>
                   </div>
@@ -258,7 +258,7 @@ const FlowDiagram = () => {
         </div>
 
         {/* Example column */}
-        <div className="flex flex-col items-center space-y-1">
+        <div className="flex flex-col items-center space-y-2">
           {steps.map((step, index) => {
             const isVisible = visibleSteps.includes(index)
             const isAnimating = animatingStep === index
@@ -277,7 +277,7 @@ const FlowDiagram = () => {
                       : ''
                   }`}
                 >
-                  <div className={`bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-4 w-full h-full flex items-center justify-center ${
+                  <div className={`bg-gradient-to-r ${step.color} rounded-lg p-2 sm:p-4 w-full h-full flex items-center justify-center ${
                     isSelected ? 'ring-2 ring-purple-400' : ''
                   }`}>
                     {stepExamples[index as keyof typeof stepExamples]}
@@ -291,7 +291,7 @@ const FlowDiagram = () => {
                         : 'opacity-0'
                     }`}
                   >
-                    <div className={`h-4 sm:h-6 border-l-2 border-dashed border-purple-400 ${
+                    <div className={`h-6 sm:h-8 border-l-2 border-dashed border-purple-400 ${
                       isAnimating ? 'animate-path-glow' : ''
                     }`}></div>
                   </div>
