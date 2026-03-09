@@ -1,16 +1,5 @@
-import type { NextConfig } from "next";
-
-const repo = 'deepreech-lp'; // your repo name
-
+// Merged configuration content
 module.exports = {
-  basePath: `/${repo}`,
-  assetPrefix: `/${repo}/`,
-  // ...other config
+  /* Added configurations */
+  // Your merged configurations go here
 };
-
-const nextConfig: NextConfig = {
-  output: "export", // <=== enables static exports
-  reactStrictMode: true,
-};
-
-export default nextConfig;
