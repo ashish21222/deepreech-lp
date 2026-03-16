@@ -48,7 +48,7 @@ export default function Navbar() {
   }, [isScrolled]);
 
   return (
-    <div className="fixed top-6 left-0 right-0 z-[100] flex justify-center px-4">
+    <div className="fixed top-6 left-0 right-0 z-[100] flex justify-center px-4 pointer-events-none">
       <nav
         ref={navRef}
         className="flex items-center justify-between w-full max-w-5xl px-6 py-4 rounded-full transition-all duration-300 pointer-events-auto"
@@ -67,10 +67,15 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <button className="magnetic-btn relative overflow-hidden bg-accent text-white px-6 py-2 rounded-full font-heading text-sm font-semibold group">
+        <a
+          href="https://cal.com/deepreech/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="magnetic-btn relative overflow-hidden bg-accent text-white px-6 py-2 rounded-full font-heading text-sm font-semibold group inline-block"
+        >
           <span className="relative z-10 transition-colors duration-300">Book a call</span>
           <div className="absolute inset-0 bg-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left ease-out"></div>
-        </button>
+        </a>
       </nav>
     </div>
   );

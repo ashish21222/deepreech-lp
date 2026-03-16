@@ -43,9 +43,9 @@ function DiagnosticShuffler() {
               transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)'
             }}
           >
-            <span className="opacity-60">{`0${card.id}`}</span>
-            <span className="font-bold">{card.label}</span>
-            <div className={`w-2 h-2 rounded-full ${isTop ? 'bg-accent animate-pulse' : 'bg-dark/20'}`} />
+            <span className="opacity-60 text-xs w-6">{`0${card.id}`}</span>
+            <span className="font-bold flex-1 text-center truncate px-2">{card.label}</span>
+            <div className={`w-2 h-2 rounded-full flex-shrink-0 ${isTop ? 'bg-accent animate-pulse' : 'bg-dark/20'}`} />
           </div>
         );
       })}

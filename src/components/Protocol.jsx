@@ -136,11 +136,11 @@ export default function Protocol() {
   }, []);
 
   return (
-    <section ref={containerRef} id="protocol" className="relative w-full bg-background pt-24 pb-24">
+    <section ref={containerRef} id="protocol" className="relative w-full bg-background pt-32 md:pt-24 pb-24">
       {cards.map((card, i) => (
         <div 
           key={i} 
-          className="protocol-card sticky top-0 h-[100vh] w-full flex items-center justify-center p-6"
+          className="protocol-card sticky top-16 md:top-0 h-[100vh] w-full flex items-center justify-center p-6 pt-24 md:p-6"
         >
           <div className="w-full max-w-5xl bg-primary border border-dark/10 rounded-[3rem] h-[80vh] flex flex-col md:flex-row overflow-hidden shadow-2xl">
             
