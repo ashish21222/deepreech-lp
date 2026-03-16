@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-4xl text-primary flex flex-col items-start gap-4">
         
         <h1 className="flex flex-col gap-2 uppercase">
-          <span className="hero-element font-heading text-4xl md:text-6xl font-bold tracking-tight text-primary/90">
+          <span className="hero-element font-heading text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-primary/90">
             Deploy the
           </span>
           <span className="hero-element font-drama text-6xl md:text-[8rem] leading-[0.9] italic text-primary">
