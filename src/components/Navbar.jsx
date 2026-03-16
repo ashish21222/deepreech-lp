@@ -48,7 +48,7 @@ export default function Navbar() {
   }, [isScrolled]);
 
   return (
-    <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+    <div className="fixed top-6 left-0 right-0 z-[100] flex justify-center px-4">
       <nav
         ref={navRef}
         className="flex items-center justify-between w-full max-w-5xl px-6 py-4 rounded-full transition-all duration-300 pointer-events-auto"
