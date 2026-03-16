@@ -145,12 +145,12 @@ export default function Protocol() {
           <div className="w-full max-w-5xl bg-primary border border-dark/10 rounded-[3rem] h-[80vh] flex flex-col md:flex-row overflow-hidden shadow-2xl">
             
             {/* Visuals half */}
-            <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col items-center justify-center p-8 relative overflow-hidden bg-background/50">
+            <div className="w-full md:w-1/2 h-1/3 md:h-full flex flex-col items-center justify-center p-4 md:p-8 relative overflow-hidden bg-background/50">
               <card.Viz />
             </div>
 
             {/* Content half */}
-            <div className="w-full md:w-1/2 h-1/2 md:h-full p-8 md:p-16 flex flex-col justify-center">
+            <div className="w-full md:w-1/2 h-2/3 md:h-full p-6 md:p-16 flex flex-col justify-center">
               <div className="font-data text-accent text-xl mb-4 opacity-80 border-b border-dark/10 pb-4 inline-block max-w-min">
                 {card.num}
               </div>

@@ -4,7 +4,7 @@ export default function CallToAction() {
   return (
     <section className="py-32 px-6 flex flex-col items-center justify-center text-center bg-background border-t border-dark/5">
       <div className="max-w-3xl flex flex-col items-center">
-        <h2 className="font-drama text-5xl md:text-7xl italic text-dark mb-6 tracking-tight">
+        <h2 className="font-drama text-4xl md:text-6xl lg:text-7xl italic text-dark mb-6 tracking-tight">
           Initiate sequence.
         </h2>
         <p className="font-heading text-dark/70 text-lg md:text-xl mb-12 max-w-xl">

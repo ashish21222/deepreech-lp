@@ -82,7 +82,7 @@ export default function Philosophy() {
           {splitWords("Most B2B AI focuses on: cloud dependency, generic models, and third-party risk.")}
         </div>
 
-        <div ref={text2Ref} className="font-drama text-5xl md:text-[5.5rem] leading-[1.1] max-w-4xl tracking-tight">
+        <div ref={text2Ref} className="font-drama text-4xl md:text-5xl lg:text-[5.5rem] leading-[1.1] max-w-4xl tracking-tight">
           {splitWords("We focus on: ")}
           <span className="word inline-block text-accent italic pr-2">absolute sovereignty.</span>
         </div>
